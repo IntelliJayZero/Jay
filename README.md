@@ -5,6 +5,4 @@
 
 [this is:](https://github.com/IntelliJayZero)
 
-- [x]vote
-
-> I!
+> Capricorn Zero
