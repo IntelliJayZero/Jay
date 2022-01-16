@@ -1,0 +1,4878 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>三英军棋</title>
+	<link href="jun.css" rel="stylesheet" type="text/css">
+	<script>
+		function show(a){
+			var x = a.value;
+			if (x == "1"){
+				a.style.background="aquamarine";
+				return true;
+			}
+			else if (x == "0"){
+				a.style.background="lightskyblue";
+				return true;
+			}
+			else
+				a.style.background="none";
+		}
+	</script>
+</head>
+
+<body>
+	<table border="2">
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		
+		<tr>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+		
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+		<tr>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td>
+				<form action="" name="f">
+					<select name="qi" onChange="show(this)">
+						<option value="-1" selected>    </option>
+						<option value="1">元帅</option>
+						<option value="0">元帅</option>
+						<option value="1">导弹</option>
+						<option value="0">导弹</option>
+						<option value="1">堡垒</option>
+						<option value="0">堡垒</option>
+						<option value="1">司令</option>
+						<option value="0">司令</option>
+						<option value="1">军长</option>
+						<option value="0">军长</option>
+						<option value="1">师长</option>
+						<option value="0">师长</option>
+						<option value="1">旅长</option>
+						<option value="0">旅长</option>
+						<option value="1">团长</option>
+						<option value="0">团长</option>
+						<option value="1">营长</option>
+						<option value="0">营长</option>
+						<option value="1">连长</option>
+						<option value="0">连长</option>
+						<option value="1">排长</option>
+						<option value="0">排长</option>
+						<option value="1">工兵</option>
+						<option value="0">工兵</option>
+						<option value="1">炸弹</option>
+						<option value="0">炸弹</option>
+						<option value="1">地雷</option>
+						<option value="0">地雷</option>
+						<option value="1">军旗</option>
+						<option value="0">军旗</option>
+					</select>
+				</form>
+			</td>
+			<td></td><td></td><td></td><td></td><td></td><td></td>
+		</tr>
+	</table>
+</body>
+</html>
